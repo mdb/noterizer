@@ -1,4 +1,13 @@
 module Helpers
+  def note_double
+    double('Note',
+      to: 'Mike',
+      from: 'Sam',
+      heading: 'Tomorrow',
+      body: 'Call me after 3pm.',
+    )
+  end
+
   def stub_note_request(path)
     base_url = Rails.application.config.notes_xml_service_root
 

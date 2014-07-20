@@ -1,14 +1,7 @@
 require 'spec_helper'
 
 describe 'notes/_note' do
-  let(:note) do
-    double('Note',
-      to: 'Mike',
-      from: 'Sam',
-      heading: 'Tomorrow',
-      body: 'Call me after 3pm.',
-    )
-  end
+  let(:note) { note_double }
 
   before :each do
     assign(:note, note)
