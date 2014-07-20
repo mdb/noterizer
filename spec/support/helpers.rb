@@ -1,6 +1,6 @@
 module Helpers
   def stub_note_request(path)
-    base_url = "http://notesservicedemo.herokuapp.com"
+    base_url = Rails.application.config.notes_xml_service_root
 
     stub_request(:get, "#{base_url}/#{path}").to_return(
       body: [
