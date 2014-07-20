@@ -38,3 +38,4 @@ gem 'spring',        group: :development
 
 gem 'rspec-rails'
 gem 'nokogiri'
+gem 'webmock', group: :test
