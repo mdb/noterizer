@@ -32,5 +32,8 @@ module Noterizer
       g.helper false
       g.assets false
     end
+
+    # the external API base
+    config.notes_xml_service_root = 'http://notesxmlservice.herokuapp.com'
   end
 end
